@@ -2,6 +2,18 @@
 
 A modern web application providing a suite of free tools for students, built with Next.js 13+ and styled with Tailwind CSS.
 
+⚠️ **IMPORTANT: PROPRIETARY SOFTWARE** ⚠️
+This software is proprietary and access is restricted. See [LICENSE](LICENSE) for detailed terms.
+
+## 🔒 Access Control
+
+This software is protected by strict access controls:
+
+- Unauthorized access, copying, or distribution is prohibited
+- Source code access is restricted
+- Commercial use requires explicit written permission
+- All rights reserved by Student Tools
+
 ## 🌟 Features
 
 ### Image Resizer
@@ -64,28 +76,9 @@ Design elements include:
 - **Security**: Custom security headers
 - **Performance**: Optimized assets and lazy loading
 
-## 🚀 Getting Started
+## 🚀 Authorized Setup
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/kundan175/student-toolkit
-cd student-tools
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Run the development server:
-
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Access to setup and development requires authorization. Contact administrators for access credentials.
 
 ## 📦 Project Structure
 
@@ -113,6 +106,9 @@ src/
 - Secure cookie handling
 - Rate limiting
 - Input validation
+- Access control and authentication
+- IP-based restrictions
+- Usage monitoring and logging
 
 ## 🌐 Browser Support
 
@@ -131,22 +127,25 @@ The application is fully responsive and works on:
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributing is restricted. All modifications require explicit authorization.
+Contact administrators for access and contribution guidelines.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is protected by a proprietary license. See [LICENSE](LICENSE) for detailed terms.
+Unauthorized use, copying, or distribution is strictly prohibited.
 
-## 🙏 Acknowledgments
+## 🔐 Security Notice
 
-- Next.js team for the amazing framework
-- Tailwind CSS for the utility-first CSS framework
-- All contributors who have helped with the project
+This software is monitored for unauthorized access attempts.
+Violations will be prosecuted to the fullest extent of the law.
 
 ## 📞 Contact
 
-For any questions or suggestions, please open an issue in the repository.
+For authorized access and inquiries:
+
+- Submit requests through official channels
+- Include institutional credentials
+- Allow 2-3 business days for response
+
+All rights reserved © 2024 Student Tools
