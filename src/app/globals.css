@@ -2,20 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-primary text-white;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary-light via-primary to-primary-dark;
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-200 ease-in-out hover:scale-[1.02];
+  }
+
+  .tool-card {
+    @apply glass-effect hover-scale rounded-2xl p-8 cursor-pointer relative overflow-hidden;
+    @apply before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r before:from-accent/0 before:to-accent/10 before:opacity-0 before:transition-opacity before:duration-300;
+    @apply hover:before:opacity-100 hover:border-accent/30;
+  }
+
+  .input-field {
+    @apply bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/40;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent/50;
+    @apply transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-primary font-semibold px-6 py-3 rounded-xl;
+    @apply hover:bg-accent-light hover:shadow-lg hover:shadow-accent/20;
+    @apply active:bg-accent-dark;
+    @apply transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply glass-effect text-white font-semibold px-6 py-3 rounded-xl;
+    @apply hover:bg-white/10 hover:border-accent/30;
+    @apply active:bg-white/15;
+    @apply transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold mb-8 text-white;
+    @apply bg-gradient-to-r from-white to-accent bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply glass-effect rounded-2xl p-8;
+    @apply border border-white/10 hover:border-accent/20;
+    @apply transition-all duration-200;
+  }
+
+  .feature-card {
+    @apply card hover:scale-[1.02];
+    @apply before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-accent/0 before:to-accent/5;
+  }
+
+  .nav-link {
+    @apply text-white/70 hover:text-accent transition-colors duration-200;
+  }
+
+  .checkbox {
+    @apply h-5 w-5 rounded-lg border-2 border-accent/50 bg-white/5;
+    @apply checked:bg-accent checked:border-accent;
+    @apply focus:ring-2 focus:ring-accent/50;
+    @apply transition-all duration-200;
+  }
+
+  .highlight {
+    @apply text-accent;
+  }
+
+  .glow {
+    @apply relative;
+    @apply after:absolute after:inset-0 after:bg-accent/20 after:blur-xl after:opacity-0;
+    @apply hover:after:opacity-100;
+    @apply transition-all duration-300;
+  }
 }
