@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 interface BioTemplate {
   id: string;
@@ -65,11 +65,7 @@ export default function BioMakerTool() {
   const [generatedBio, setGeneratedBio] = useState<string>("");
   const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    generateBio();
-  }, [formData, selectedTemplate]);
-
-  const generateBio = () => {
+  const generateBio = useCallback(() => {
     const template = bioTemplates.find((t) => t.id === selectedTemplate);
     if (!template) return;
 
@@ -86,7 +82,11 @@ export default function BioMakerTool() {
       .trim();
 
     setGeneratedBio(bio);
-  };
+  }, [formData, selectedTemplate]);
+
+  useEffect(() => {
+    generateBio();
+  }, [generateBio]);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

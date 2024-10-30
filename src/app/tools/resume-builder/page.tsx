@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import ResumeBuilderTool from "./components/ResumeBuilderTool";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function ResumeBuilder() {
       <header className="glass-effect sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-4">
-            <a
+            <Link
               href="/"
               className="text-white/80 hover:text-accent transition-colors flex items-center gap-2 group"
             >
@@ -27,7 +28,7 @@ export default function ResumeBuilder() {
                 ←
               </span>
               <span>Back to Tools</span>
-            </a>
+            </Link>
           </nav>
         </div>
       </header>

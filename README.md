@@ -1,37 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Tools
 
-## Getting Started
+A modern web application providing a suite of free tools for students, built with Next.js 13+ and styled with Tailwind CSS.
 
-First, run the development server:
+## 🌟 Features
+
+### Image Resizer
+
+- Upload and resize images while maintaining quality
+- Maintain aspect ratio option
+- Common size presets (Instagram, Twitter, etc.)
+- Preview before download
+- Supports JPG, PNG, and WebP formats
+
+### Image Comparator
+
+- Side-by-side image comparison with interactive slider
+- Horizontal and vertical comparison modes
+- Drag and drop image upload
+- Real-time preview
+- Smooth transitions and animations
+
+### Bio Maker
+
+- Multiple bio templates (Professional, Creative, Minimal, Student)
+- Real-time preview
+- Character count for different platforms
+- One-click copying
+- Emoji support
+- Platform-specific length validation
+
+### Resume Builder
+
+- Multiple professional templates
+- Section-based editing (Personal Info, Education, Experience, Skills)
+- Real-time preview
+- PDF export functionality
+- ATS-friendly formats
+- Save and edit functionality
+
+## 🎨 Design
+
+The application features a modern, attractive UI with:
+
+- Primary Color: `#3B134E` (Dark Purple)
+- Accent Color: `#F5CE48` (Gold)
+- Text Color: `#FFFFFF` (White)
+
+Design elements include:
+
+- Glass-morphism effects
+- Gradient backgrounds
+- Interactive hover states
+- Smooth animations
+- Responsive layout
+- Dark mode optimization
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 13+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Rendering**: Server-Side Rendering (SSR)
+- **Security**: Custom security headers
+- **Performance**: Optimized assets and lazy loading
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/kundan175/student-toolkit
+cd student-tools
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── page.tsx                 # Landing page
+│   ├── layout.tsx              # Root layout
+│   ├── globals.css             # Global styles
+│   └── tools/                  # Tool components
+│       ├── image-resizer/
+│       ├── image-comparator/
+│       ├── bio-maker/
+│       └── resume-builder/
+├── components/                 # Shared components
+└── styles/                    # Additional styles
+```
 
-## Learn More
+## 🔒 Security Features
 
-To learn more about Next.js, take a look at the following resources:
+- CSP (Content Security Policy) headers
+- X-Frame-Options protection
+- XSS protection
+- CSRF protection
+- Secure cookie handling
+- Rate limiting
+- Input validation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Browser Support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-## Deploy on Vercel
+## 📱 Responsive Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application is fully responsive and works on:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# student-toolkit
+- Desktop computers
+- Tablets
+- Mobile devices
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- All contributors who have helped with the project
+
+## 📞 Contact
+
+For any questions or suggestions, please open an issue in the repository.

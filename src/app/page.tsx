@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -166,8 +165,8 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title">About Student Tools</h2>
             <p className="text-lg text-white/80">
-              We're dedicated to providing students with the tools they need to
-              succeed. Our platform offers a suite of free, easy-to-use
+              We&apos;re dedicated to providing students with the tools they
+              need to succeed. Our platform offers a suite of free, easy-to-use
               utilities designed to help you create professional content and
               manage your academic work efficiently.
             </p>
